@@ -32,12 +32,8 @@ class Point:
     def color(self, _color):
         self.__color = _color
 
-<<<<<<< HEAD
     def __str__(self):
         return "[{0}] x = {1}, y = {2}, color = {3}".format(self.__class__.__name__, self.__x, self.__y, self.__color)
-
-=======
->>>>>>> origin/master
 
 def inputData() -> tuple:
     _num_of_points, _num_of_colors = (int(s) for s in input().split())

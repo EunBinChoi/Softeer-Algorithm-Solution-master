@@ -32,12 +32,9 @@ class Point:
     def color(self, _color):
         self.__color = _color
 
-<<<<<<< HEAD
     def __str__(self):
         return "[{0}] x = {1}, y = {2}, color = {3}".format(self.__class__.__name__, self.__x, self.__y, self.__color)
 
-=======
->>>>>>> origin/master
 
 def inputData() -> tuple:
     _num_of_points, _num_of_colors = (int(s) for s in input().split())
@@ -77,11 +74,7 @@ def calArea(p1: Point, p2: Point) -> int:
     return abs(p1.x - p2.x) * abs(p1.y - p2.y)
 
 
-<<<<<<< HEAD
 # 1) combination of 2 points with nested loops
-=======
-# 1)
->>>>>>> origin/master
 def combination(_num_of_points, _num_of_colors, _points):
     _pts = copy.deepcopy(_points)
     _min_area = sys.maxsize
@@ -96,12 +89,8 @@ def combination(_num_of_points, _num_of_colors, _points):
     return _min_area
 
 
-<<<<<<< HEAD
 # 2) dfs (depth-first search)
 # set one point as root node and put the other points to the stack
-=======
-# 2)
->>>>>>> origin/master
 def dfs(_num_of_points, _num_of_colors, _points):
     _pts = copy.deepcopy(_points)
     _min_area = sys.maxsize
